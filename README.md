@@ -1,16 +1,28 @@
-## Hi there 👋
+✨ Welcome to my GitHub ✨
 
-<!--
-**VeronikaAas/VeronikaAas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+About Me
+<ul>
+  <li>Languages and Tools: HTML & CSS</li>
+  <li>Strengths: Design and creativity</li>
+  <li>Hobbies: Strength training at thte gym, long walks, gaming, baking cupcakes, reading, and cuddling cute dogs</li>
+  <li>Philosophy: Always push to learn more, there is a lot of knowledge and opertunities waiting</li>
+</ul>
 
-Here are some ideas to get you started:
+🎮 Leveling Up
+I'm currently on a quest to master Front-End Development. Just like in gaming, every project is a new level to conquer, and I'm gaining XP with each one. Big projects are my boss battles, and I'm learning so much defeating them. 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+🧁 Fun Facts
+<ul>
+  <li>I love baking, and cupcakes are my favourite (power-ups in disguise)</li>
+  <li>Dogs are the best companions (like trusty sidekicks)</li>
+  <li>Strength training is my side-quest</li>
+</ul>
+
+📚 Current Mission
+I'm diving deeper into JavaScript and React, aiming to add more tools to my inventory. Yhe journey is long, but every step is a step closer to becoming a Front-End Hero!
+
+🌸 Let's Connect! 
+Feel free to reach out or check out my repositories. Let's learn and level up together. 
+
+
+
