@@ -21,7 +21,7 @@ I'm currently on a quest to master Front-End Development. Just like in gaming, e
 
 📚 Current Mission:
 
-I'm diving deeper into JavaScript and React, aiming to add more tools to my inventory. Yhe journey is long, but every step is a step closer to becoming a Front-End Hero!
+I'm diving deeper into JavaScript and React, aiming to add more tools to my inventory. The journey is long, but every step is a step closer to becoming a Front-End Hero!
 
 🌸 Let's Connect! 
 
