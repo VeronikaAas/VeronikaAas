@@ -4,7 +4,7 @@ About Me
 <ul>
   <li>Languages and Tools: HTML & CSS</li>
   <li>Strengths: Design and creativity</li>
-  <li>Hobbies: Strength training at thte gym, long walks, gaming, baking cupcakes, reading, and cuddling cute dogs</li>
+  <li>Hobbies: Strength training at the gym, long walks, gaming, baking cupcakes, reading, and cuddling cute dogs</li>
   <li>Philosophy: Always push to learn more, there is a lot of knowledge and opertunities waiting</li>
 </ul>
 
