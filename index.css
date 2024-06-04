@@ -93,21 +93,25 @@ p {
 @media screen and (max-width: 768px) {
     body {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
-    .imageContainer,
-    .textContainer {
-        width: 50%;
+    .imageContainer, .textContainer {
+        width: 60%;
+        padding: 0;
+        margin: 0;
     }
 
     .imageContainer {
-        margin-bottom: 20px;
-        padding-left: 25%;
+        padding-top: 20px;
     }
 
     .textContainer {
-        padding-left: 25%;
+        padding: 20px 10%;
+    }
+
+    .return img {
+        width: 40%;
     }
 }
