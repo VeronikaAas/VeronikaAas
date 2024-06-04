@@ -90,8 +90,12 @@ a:hover {
         text-align: center;
     }
 
+    .projectContainer {
+        flex-direction: column; /* Ensure projectContainer stacks items vertically */
+    }
+
     .imageContainer, .textContainer {
-        width: 60%;
+        width: 100%; /* Ensure full width for better stacking */
         padding: 0;
         margin: 0;
     }
@@ -104,7 +108,8 @@ a:hover {
         padding: 20px 10%;
     }
 
-    .return img {
-        width: 40%;
+    .return {
+        position: relative; /* Make return relative to body */
+        top: 0;
+        left: 0;
     }
-}
