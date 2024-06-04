@@ -69,7 +69,7 @@ p {
     font-weight: 600;
 }
 
-.box4 p {
+.box7 p {
     font-weight: 600;
     font-size: 1.2rem;
 }
@@ -93,6 +93,8 @@ p {
 @media screen and (max-width: 768px) {
     body {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .imageContainer,
