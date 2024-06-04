@@ -82,3 +82,25 @@ a:hover {
     background-color: initial;
     padding: 0;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageContainer,
+    .textContainer {
+        width: 50%;
+    }
+
+    .imageContainer {
+        margin-bottom: 20px;
+        padding-left: 25%;
+    }
+
+    .textContainer {
+        padding-left: 25%;
+    }
+}
