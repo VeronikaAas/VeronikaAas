@@ -12,13 +12,13 @@ export default function LandingPage() {
       <div className="flex flex-col sm:flex-row gap-6 mb-12">
         <button
           onClick={() => navigate("/one")}
-          className="px-6 py-4 bg-pink-500 text-white rounded-md shadow-[0_0_15px_#a855f7] hover:bg-pink-800 transition-all duration-300"
+          className="px-6 py-4 bg-pink-500 text-white rounded-md shadow-[0_0_15px_#a855f7] hover:bg-pink-800 transition-all duration-300 cursor-pointer"
         >
           PLAYER ONE
         </button>
         <button
           onClick={() => navigate("/two")}
-          className="px-6 py-4 bg-green-500 text-white rounded-md shadow-[0_0_15px_#22c55e] hover:bg-green-800 transition-all duration-300"
+          className="px-6 py-4 bg-green-500 text-white rounded-md shadow-[0_0_15px_#22c55e] hover:bg-green-800 transition-all duration-300 cursor-pointer"
         >
           PLAYER TWO
         </button>
