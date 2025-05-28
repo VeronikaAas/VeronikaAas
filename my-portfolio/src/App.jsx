@@ -5,6 +5,11 @@ import DesignTwo from './layouts/DesignTwo';
 import OneHome from './pages/OneHome';
 import TwoHome from './pages/TwoHome';
 
+import Auction from './pages/projects/Auction';
+import ReactProject from './pages/projects/React';
+import Fireside from './pages/projects/Fireside';
+
+
 function App() {
 	return (
 		<Router>
@@ -14,7 +19,9 @@ function App() {
 				{/* Ruter for Design One */}
 				<Route path="/one/*" element={<DesignOne />}>
 					<Route index element={<OneHome />} />
-					{/* Legg til flere sider for Design One her */}
+					<Route path="projects/auction-house" element={<Auction />} />
+					<Route path="projects/react" element={<ReactProject />} />
+					<Route path="projects/fireside" element={<Fireside />} />
 				</Route>
 
 				{/* Ruter for Design Two */}
