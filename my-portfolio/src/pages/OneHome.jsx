@@ -5,32 +5,32 @@ const characters = [
   {
     name: "Book nerd",
     img: "/characters/char_book.png",
-    description: "Dreamy spellcaster with a love for stars and coding spells.",
+    description: "A shy enchantress who conjures code from ancient tomes under moonlight.",
   },
   {
     name: "Dog lover",
     img: "/characters/char_dogs.png",
-    description: "Tiny tech fairy that builds magical websites with glitter.",
+    description: "A cheerful sprite who crafts websites while surrounded by loyal pups.",
   },
   {
     name: "Explorer",
     img: "/characters/char_trav.png",
-    description: "A cuddly cat-hacker who speaks fluent JavaScript and meows.",
+    description: "A pixel nomad who maps magical lands and discovers hidden bugs.",
   },
   {
     name: "Workout junkie",
     img: "/characters/char_work.png",
-    description: "Bouncy bunny who deploys cuteness-powered web apps.",
+    description: "A strong-hearted bunny who boosts websites with every enchanted jump squat.",
   },
   {
     name: "Bakery girl",
     img: "/characters/char_bake.png",
-    description: "Sprinkles joy and code into every fresh batch of websites.",
+    description: "A sugar sorceress who codes sweet spells into every pastel pastry.",
   },
   {
-    name: "In a gaming world",
+    name: "Left IRL for gaming",
     img: "/characters/char_gaming.png",
-    description: "Level 99 gamer-dev with elite code-combo skills.",
+    description: "A portal-hopping rogue who hacks realities one boss battle at a time.",
   },
 ];
 

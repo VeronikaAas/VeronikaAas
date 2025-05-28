@@ -5,32 +5,32 @@ const characters = [
   {
     name: "Book nerd",
     img: "/characters/dark_book.png",
-    description: "Dreamy spellcaster with a love for stars and coding spells.",
+    description: "A silent scholar who deciphers forbidden code in the ruins of lost civilizations.",
   },
   {
     name: "Dog lover",
     img: "/characters/dark_dog.png",
-    description: "Tiny tech fairy that builds magical websites with glitter.",
+    description: "A loyal scout trained in code and combat, never alone, never off guard.",
   },
   {
     name: "Explorer",
     img: "/characters/dark_trav.png",
-    description: "A cuddly cat-hacker who speaks fluent JavaScript and meows.",
+    description: "A hardened wanderer who uncovers dark systems in forgotten digital frontiers.",
   },
   {
     name: "Workout junkie",
     img: "/characters/dark_work.png",
-    description: "Bouncy bunny who deploys cuteness-powered web apps.",
+    description: "A relentless warrior who builds muscle and frontends with brutal precision.",
   },
   {
     name: "Bakery girl",
     img: "/characters/dark_cake.png",
-    description: "Sprinkles joy and code into every fresh batch of websites.",
+    description: "Don't be fooled by the frosting—she's coded for vengeance beneath the sweetness.",
   },
   {
     name: "Left IRL for gaming",
     img: "/characters/dark_gaming.png",
-    description: "Level 99 gamer-dev with elite code-combo skills.",
+    description: "An elite operator who abandoned the real world to master digital warfare.",
   },
 ];
 
