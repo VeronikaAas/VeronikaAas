@@ -8,7 +8,9 @@ import TwoHome from './pages/TwoHome';
 import Auction from './pages/projects/Auction';
 import ReactProject from './pages/projects/React';
 import Fireside from './pages/projects/Fireside';
-
+import DarkAuction from './pages/projects/DarkAuction';
+import DarkReact from './pages/projects/DarkReact';
+import DarkFireside from './pages/projects/DarkFireside';
 
 function App() {
 	return (
@@ -27,7 +29,9 @@ function App() {
 				{/* Ruter for Design Two */}
 				<Route path="/two/*" element={<DesignTwo />}>
 					<Route index element={<TwoHome />} />
-					{/* Legg til flere sider for Design Two her */}
+					<Route path="projects/DarkAuction" element={<DarkAuction />} />
+					<Route path="projects/DarkReact" element={<DarkReact />} />
+					<Route path="projects/DarkFireside" element={<DarkFireside />} />
 				</Route>
 
 				{/* Fallback */}
