@@ -6,16 +6,19 @@ import prettier from 'eslint-plugin-prettier';
 import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default [
-	{ ignores: ['dist'] },
+	{ ignores: ['dist', 'node_modules'] },
+
 	{
 		files: ['**/*.{js,jsx}'],
 		languageOptions: {
-			ecmaVersion: 2020,
-			globals: globals.browser,
+			ecmaVersion: 'latest',
+			sourceType: 'module',
+			globals: {
+				...globals.browser,
+				...globals.node,
+			},
 			parserOptions: {
-				ecmaVersion: 'latest',
 				ecmaFeatures: { jsx: true },
-				sourceType: 'module',
 			},
 		},
 		plugins: {
@@ -26,14 +29,15 @@ export default [
 		rules: {
 			...js.configs.recommended.rules,
 			...reactHooks.configs.recommended.rules,
-
-			'prettier/prettier': 'warn',
-
+			indent: ['error', 'tab'],
+			'no-tabs': 'off',
+			'prettier/prettier': ['warn', { useTabs: true }],
 			'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
 			'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
 		},
-		settings: {},
 	},
 
-	...eslintConfigPrettier,
+	{
+		...eslintConfigPrettier,
+	},
 ];
