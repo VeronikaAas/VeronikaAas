@@ -4,23 +4,23 @@ export default function LandingPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen text-center px-4">
+    <div className="flex flex-col items-center justify-center h-screen text-center px-4 relative">
       <h1 className="text-3xl sm:text-4xl md:text-5xl neon-text mb-10 animate-pulse">
-        SELECT YOUR PLAYER
+        CHOOSE YOUR VIBE
       </h1>
 
       <div className="flex flex-col sm:flex-row gap-6 mb-12">
         <button
-          onClick={() => navigate("/one")}
-          className="px-6 py-4 bg-pink-500 text-white rounded-md shadow-[0_0_15px_#a855f7] hover:bg-pink-800 transition-all duration-300 cursor-pointer"
+          onClick={() => navigate("/one?theme=cute")}
+          className="px-6 py-4 bg-pink-400 text-white rounded-md shadow-[0_0_15px_#f472b6] hover:bg-pink-600 transition-all duration-300 cursor-pointer"
         >
-          PLAYER ONE
+          🌸 Cutesy Mode
         </button>
         <button
-          onClick={() => navigate("/two")}
-          className="px-6 py-4 bg-green-500 text-white rounded-md shadow-[0_0_15px_#22c55e] hover:bg-green-800 transition-all duration-300 cursor-pointer"
+          onClick={() => navigate("/two?theme=dark")}
+          className="px-6 py-4 bg-gray-800 text-white rounded-md shadow-[0_0_15px_#0f172a] hover:bg-black transition-all duration-300 cursor-pointer"
         >
-          PLAYER TWO
+          🕶️ Dark Mode
         </button>
       </div>
 
