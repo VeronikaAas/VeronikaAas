@@ -1,29 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 body {
-  background-color: black;
-  color: #00ff99;
-  font-family: 'Press Start 2P', cursive;
-  background-image: radial-gradient(circle at center, #222 0%, #000 100%);
+	background-color: black;
+	color: #00ff99;
+	font-family: 'Press Start 2P', cursive;
+	background-image: radial-gradient(circle at center, #222 0%, #000 100%);
 }
-
 
 /* Neon tekst-effekt */
 .neon-text {
-  text-shadow:
-    0 0 5px #0ff,
-    0 0 10px #0ff,
-    0 0 20px #0ff;
+	text-shadow:
+		0 0 5px #0ff,
+		0 0 10px #0ff,
+		0 0 20px #0ff;
 }
 
 /* Blinkende PRESS START animasjon */
 .blink {
-  animation: blinkAnim 1.2s step-start infinite;
+	animation: blinkAnim 1.2s step-start infinite;
 }
 
 @keyframes blinkAnim {
-  50% {
-    opacity: 0;
-  }
+	50% {
+		opacity: 0;
+	}
 }
