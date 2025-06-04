@@ -64,11 +64,6 @@ export default function DarkFireside() {
 					</a>
 				</p>
 			</div>
-
-			{/* Atmospheric Gothic Deco */}
-			<div className="absolute top-12 left-8 text-red-800 text-3xl animate-pulse">🕯</div>
-			<div className="absolute bottom-12 right-10 text-red-700 text-2xl animate-bounce">🕯</div>
-			<div className="absolute top-1/2 left-4 text-red-600 text-xl animate-bounce">✥</div>
 		</div>
 	);
 }

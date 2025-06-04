@@ -59,11 +59,6 @@ export default function Auction() {
 					</a>
 				</p>
 			</div>
-
-			{/* Decorative emojis for cuteness overload */}
-			<div className="absolute top-8 left-6 text-pink-300 text-3xl animate-bounce">💖</div>
-			<div className="absolute bottom-12 right-10 text-purple-300 text-3xl animate-pulse">🧁</div>
-			<div className="absolute top-1/2 left-2 text-pink-300 text-2xl animate-pulse">🌸</div>
 		</div>
 	);
 }

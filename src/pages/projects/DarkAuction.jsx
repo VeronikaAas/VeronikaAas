@@ -54,10 +54,6 @@ export default function DarkAuction() {
 					</a>
 				</p>
 			</div>
-
-			<div className="absolute top-10 left-8 text-red-800 text-3xl animate-pulse">☠</div>
-			<div className="absolute bottom-10 right-10 text-red-700 text-2xl animate-bounce">🕯</div>
-			<div className="absolute top-1/2 left-4 text-red-600 text-xl animate-bounce">✥</div>
 		</div>
 	);
 }
