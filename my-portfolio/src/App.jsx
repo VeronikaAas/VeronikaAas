@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import LandingPage from './pages/LandingPage';
 import DesignOne from './layouts/DesignOne';
 import DesignTwo from './layouts/DesignTwo';
@@ -15,18 +16,19 @@ import DarkFireside from './pages/projects/DarkFireside';
 function App() {
 	return (
 		<Router>
+			<ScrollToTop />
 			<Routes>
 				<Route path="/" element={<LandingPage />} />
 
-				{/* Ruter for Design One */}
+				{/* Router for Design One */}
 				<Route path="/one/*" element={<DesignOne />}>
 					<Route index element={<OneHome />} />
-					<Route path="projects/auction-house" element={<Auction />} />
-					<Route path="projects/react" element={<ReactProject />} />
-					<Route path="projects/fireside" element={<Fireside />} />
+					<Route path="projects/Auction" element={<Auction />} />
+					<Route path="projects/React" element={<ReactProject />} />
+					<Route path="projects/Fireside" element={<Fireside />} />
 				</Route>
 
-				{/* Ruter for Design Two */}
+				{/* Router for Design Two */}
 				<Route path="/two/*" element={<DesignTwo />}>
 					<Route index element={<TwoHome />} />
 					<Route path="projects/DarkAuction" element={<DarkAuction />} />
@@ -40,5 +42,6 @@ function App() {
 		</Router>
 	);
 }
+
 
 export default App;
