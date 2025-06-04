@@ -43,34 +43,36 @@ export default function TwoHome() {
 	const next = () => setIndex((index + 1) % characters.length);
 	const prev = () => setIndex((index - 1 + characters.length) % characters.length);
 
-	const glowClass = theme === 'dark' ? 'shadow-[0_0_20px_#22d3ee,0_0_40px_#06b6d4]' : '';
+	const glowClass = theme === 'dark' ? 'shadow-[0_0_20px_#f87171,0_0_40px_#ef4444]' : '';
 
 	return (
-		<div className="bg-gray-900 text-white min-h-screen p-6 font-mono space-y-16">
+		<div className="bg-neutral-700 text-white min-h-screen p-6 font-mono space-y-16">
 			<section className="text-center">
-				<h2 className="text-2xl sm:text-3xl font-bold text-cyan-400 mb-4">🧬 Choose Your Shadow Class 🧬</h2>
+				<h2 className="text-2xl sm:text-3xl font-bold text-red-400 mb-4">See Your Characters</h2>
 				<div className="flex items-center justify-center gap-4">
-					<button onClick={prev} className="text-3xl text-cyan-300 hover:scale-110 transition cursor-pointer">
+					<button onClick={prev} className="text-3xl text-red-300 hover:scale-110 transition cursor-pointer">
 						&#8592;
 					</button>
-					<div className={`bg-gray-800 rounded-xl p-6 w-72 border border-cyan-500 ${glowClass}`}>
+					<div
+						className={`bg-neutral-900 rounded-3xl p-6 w-80 border-4 border-red-500 shadow-2xl transform hover:scale-105 transition duration-300 ${glowClass}`}
+					>
 						<img
 							src={characters[index].img}
 							alt={characters[index].name}
-							className="w-32 mx-auto mb-2 object-contain aspect-square"
+							className="w-36 mx-auto mb-3 aspect-square object-contain rounded-full border-4 border-red-400"
 						/>
-						<h3 className="text-xl font-bold text-cyan-300">{characters[index].name}</h3>
-						<p className="text-sm text-gray-300 mt-2">{characters[index].description}</p>
+						<h3 className="text-2xl font-bold text-red-300 mb-1">{characters[index].name}</h3>
+						<p className="text-sm text-gray-300 italic">{characters[index].description}</p>
 					</div>
-					<button onClick={next} className="text-3xl text-cyan-300 hover:scale-110 transition cursor-pointer">
+
+					<button onClick={next} className="text-3xl text-red-300 hover:scale-110 transition cursor-pointer">
 						&#8594;
 					</button>
 				</div>
 			</section>
-
 			{/* Projects */}
 			<section className="text-center">
-				<h2 className="text-2xl font-bold text-blue-400 mb-6">🧩 My Projects</h2>
+				<h2 className="text-2xl font-bold text-red-400 mb-6">My Projects</h2>
 				<div className="grid md:grid-cols-3 gap-6">
 					{[
 						{
@@ -95,7 +97,7 @@ export default function TwoHome() {
 							link: '/two/projects/DarkFireside',
 						},
 					].map((project) => (
-						<div key={project.id} className="bg-white rounded-lg p-4 shadow-md border border-blue-300">
+						<div key={project.id} className="bg-white rounded-lg p-4 shadow-md border border-red-300">
 							<Link to={project.link}>
 								<img
 									src={project.img}
@@ -103,10 +105,13 @@ export default function TwoHome() {
 									className="rounded mb-3 cursor-pointer hover:opacity-90 transition"
 								/>
 							</Link>
-							<h3 className="text-blue-600 font-semibold mb-2">{project.title}</h3>
+							<h3 className="text-red-600 font-semibold mb-2">{project.title}</h3>
 							<p className="text-sm mb-2">{project.description}</p>
-							<Link to={project.link} className="inline-block mt-2 text-sm text-blue-500 hover:underline">
-								See more →
+							<Link
+								to={project.link}
+								className="inline-block bg-red-100 text-red-600 px-4 py-1 rounded-full border border-red-300 shadow hover:bg-red-200 hover:text-red-800 transition text-sm"
+							>
+								See more
 							</Link>
 						</div>
 					))}
@@ -115,9 +120,9 @@ export default function TwoHome() {
 
 			{/* Skills */}
 			<section className="text-center">
-				<h2 className="text-2xl font-bold text-red-400 mb-4">🧠 Core Skills</h2>
+				<h2 className="text-2xl font-bold text-red-400 mb-4">Core Skills</h2>
 				<div className="flex flex-wrap justify-center gap-4 text-sm">
-					{['TypeScript', 'React', 'Tailwind', 'API Design', 'Auth', 'Next.js', 'MongoDB'].map((skill) => (
+					{['Figma', 'Illustrator', 'Photoshop', 'HTML', 'CSS', 'JavaScript', 'Tailwind', 'React', 'Vite', 'GitHub', 'Netlify', 'SquareSpace'].map((skill) => (
 						<span key={skill} className="bg-red-900 text-red-300 px-3 py-1 rounded-full shadow">
 							{skill}
 						</span>
@@ -127,11 +132,11 @@ export default function TwoHome() {
 
 			{/* Contact */}
 			<section className="text-center">
-				<h2 className="text-2xl font-bold text-green-400 mb-2">📬 Contact</h2>
+				<h2 className="text-2xl font-bold text-red-400 mb-2">📬 Contact</h2>
 				<p className="mb-4">Feel free to reach out or connect below:</p>
 
 				<p className="text-lg">
-					<a href="mailto:veronikaaas@live.no" className="text-blue-500 hover:underline">
+					<a href="mailto:veronikaaas@live.no" className="text-red-500 hover:underline">
 						veronikaaas@live.no
 					</a>
 				</p>
@@ -141,7 +146,7 @@ export default function TwoHome() {
 						href="https://github.com/VeronikaAas"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="text-gray-700 hover:text-black transition"
+						className="text-red-700 hover:text-black transition"
 					>
 						<svg className="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24">
 							<path
@@ -156,7 +161,7 @@ export default function TwoHome() {
 						href="https://www.linkedin.com/in/veronika-aas-3b138a131/"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="text-blue-700 hover:text-blue-900 transition"
+						className="text-red-700 hover:text-red-900 transition"
 					>
 						<svg className="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24">
 							<path

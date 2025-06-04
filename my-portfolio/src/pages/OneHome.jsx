@@ -46,31 +46,32 @@ export default function Home1() {
 	const glowClass = theme === 'cute' ? 'shadow-[0_0_20px_#fbcfe8,0_0_40px_#f0abfc]' : '';
 
 	return (
-		<div className="bg-pink-50 min-h-screen p-6 font-sans text-gray-800 space-y-16">
-			<section className="text-center">
-				<h2 className="text-2xl sm:text-3xl font-bold text-pink-500 mb-4">✨ Choose Your Character ✨</h2>
-				<div className="flex items-center justify-center gap-4">
-					<button onClick={prev} className="text-3xl hover:scale-110 transition cursor-pointer">
-						&#8592;
-					</button>
-					<div className={`bg-white rounded-xl p-6 w-72 ${glowClass}`}>
-						<img
-							src={characters[index].img}
-							alt={characters[index].name}
-							className="w-32 mx-auto mb-2 object-contain aspect-square"
-						/>
-						<h3 className="text-xl font-bold text-purple-500">{characters[index].name}</h3>
-						<p className="text-sm text-gray-600 mt-2">{characters[index].description}</p>
-					</div>
-					<button onClick={next} className="text-3xl hover:scale-110 transition cursor-pointer">
-						&#8594;
-					</button>
-				</div>
-			</section>
+		<div className="bg-gradient-to-br from-pink-200 via-purple-100 to-violet-200 min-h-screen p-6 font-sans text-pink-700 relative overflow-hidden">
+      {/* Choose Your Character */}
+      <section className="text-center mb-16">
+        <h2 className="text-4xl font-extrabold bg-gradient-to-r from-violet-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-6 animate-wiggle">
+         See Your Characters
+        </h2>
+        <div className="flex items-center justify-center gap-6">
+          <button onClick={prev} className="text-4xl hover:scale-125 transition-transform">⬅️</button>
+          <div
+            className={`bg-white rounded-3xl p-6 w-80 border-4 border-pink-200 shadow-2xl transform hover:scale-105 transition duration-300 ${glowClass}`}
+          >
+            <img
+              src={characters[index].img}
+              alt={characters[index].name}
+              className="w-36 mx-auto mb-3 aspect-square object-contain rounded-full border-4 border-purple-200"
+            />
+            <h3 className="text-2xl font-bold text-purple-500 mb-1">{characters[index].name}</h3>
+            <p className="text-sm text-gray-600 italic">{characters[index].description}</p>
+          </div>
+          <button onClick={next} className="text-4xl hover:scale-125 transition-transform">➡️</button>
+        </div>
+      </section>
 
 			{/* Projects */}
-			<section className="text-center">
-				<h2 className="text-2xl font-bold text-blue-400 mb-6">🧩 My Projects</h2>
+			<section className="text-center mb-12">
+				<h2 className="text-2xl font-bold text-violet-400 mb-6"> My Projects</h2>
 				<div className="grid md:grid-cols-3 gap-6">
 					{[
 						{
@@ -105,20 +106,22 @@ export default function Home1() {
 							</Link>
 							<h3 className="text-pink-600 font-semibold mb-2">{project.title}</h3>
 							<p className="text-sm mb-2">{project.description}</p>
-							<Link to={project.link} className="inline-block mt-2 text-sm text-blue-500 hover:underline">
-								See more →
-							</Link>
+							<Link
+            to={project.link}
+            className="inline-block bg-pink-100 text-pink-600 px-4 py-1 rounded-full border border-pink-300 shadow hover:bg-violet-200 hover:text-pink-800 transition text-sm">
+            See more
+          </Link>
 						</div>
 					))}
 				</div>
 			</section>
 
 			{/* Skills */}
-			<section className="text-center">
-				<h2 className="text-2xl font-bold text-purple-400 mb-4">🧠 Skills</h2>
+			<section className="text-center mb-12">
+				<h2 className="text-2xl font-bold text-purple-400 mb-4">Skills</h2>
 				<div className="flex flex-wrap justify-center gap-4 text-sm">
-					{['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind', 'Node.js'].map((skill) => (
-						<span key={skill} className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full shadow">
+					{['Figma', 'Illustrator', 'Photoshop', 'HTML', 'CSS', 'JavaScript', 'Tailwind', 'React', 'Vite', 'GitHub', 'Netlify', 'SquareSpace'].map((skill) => (
+						<span key={skill} className="bg-pink-700 text-pink-100 px-3 py-1 rounded-full shadow">
 							{skill}
 						</span>
 					))}
@@ -126,7 +129,7 @@ export default function Home1() {
 			</section>
 
 			<section className="text-center">
-				<h2 className="text-2xl font-bold text-green-400 mb-2">📬 Contact</h2>
+				<h2 className="text-2xl font-bold text-purple-400 mb-2">Contact</h2>
 				<p className="mb-4">Feel free to reach out or connect below:</p>
 
 				<p className="text-lg">
@@ -140,7 +143,7 @@ export default function Home1() {
 						href="https://github.com/VeronikaAas"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="text-gray-700 hover:text-black transition"
+						className="text-purple-700 hover:text-black transition"
 					>
 						<svg className="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24">
 							<path
@@ -155,7 +158,7 @@ export default function Home1() {
 						href="https://www.linkedin.com/in/veronika-aas-3b138a131/"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="text-blue-700 hover:text-blue-900 transition"
+						className="text-purple-700 hover:text-purple-900 transition"
 					>
 						<svg className="w-6 h-6 inline-block" fill="currentColor" viewBox="0 0 24 24">
 							<path
