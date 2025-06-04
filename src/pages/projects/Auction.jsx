@@ -1,4 +1,9 @@
+import React, { useEffect } from 'react';
+
 export default function Auction() {
+	useEffect(() => {
+		document.title = 'Auction House | VA';
+	}, []);
 	return (
 		<div className="bg-gradient-to-br from-pink-100 via-purple-50 to-violet-100 min-h-screen p-8 font-sans text-pink-800 relative overflow-hidden">
 			<div className="max-w-3xl mx-auto text-center">

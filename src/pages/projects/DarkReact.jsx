@@ -1,4 +1,9 @@
+import React, { useEffect } from 'react';
+
 export default function DarkReact() {
+	useEffect(() => {
+			document.title = 'E-commerce shop | VA';
+		}, []);
 	return (
 		<div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-black min-h-screen p-8 text-red-100 font-mono relative overflow-hidden">
 			<div className="max-w-3xl mx-auto text-center">
