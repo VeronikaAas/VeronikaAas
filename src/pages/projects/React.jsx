@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-export default function React() {
+export default function ReactProject() {
 	useEffect(() => {
 			document.title = 'E-commerce shop | VA';
 		}, []);
