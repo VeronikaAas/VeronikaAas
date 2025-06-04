@@ -47,29 +47,34 @@ export default function TwoHome() {
 
 	return (
 		<div className="bg-neutral-700 text-white min-h-screen p-6 font-mono space-y-16">
-			<section className="text-center">
-				<h2 className="text-2xl sm:text-3xl font-bold text-red-400 mb-4">See Your Characters</h2>
-				<div className="flex items-center justify-center gap-4">
-					<button onClick={prev} className="text-3xl text-red-300 hover:scale-110 transition cursor-pointer">
-						&#8592;
-					</button>
-					<div
-						className={`bg-neutral-900 rounded-3xl p-6 w-80 border-4 border-red-500 shadow-2xl transform hover:scale-105 transition duration-300 ${glowClass}`}
-					>
-						<img
-							src={characters[index].img}
-							alt={characters[index].name}
-							className="w-36 mx-auto mb-3 aspect-square object-contain rounded-full border-4 border-red-400"
-						/>
-						<h3 className="text-2xl font-bold text-red-300 mb-1">{characters[index].name}</h3>
-						<p className="text-sm text-gray-300 italic">{characters[index].description}</p>
-					</div>
-
-					<button onClick={next} className="text-3xl text-red-300 hover:scale-110 transition cursor-pointer">
-						&#8594;
-					</button>
-				</div>
-			</section>
+			<section className="text-center mb-16">
+  <h2 className="text-4xl font-extrabold text-red-400 mb-6">See Your Characters</h2>
+  <div className="flex items-center justify-center gap-6">
+    <button
+      onClick={prev}
+      className="text-4xl text-red-400 hover:text-red-500 hover:scale-125 transition-transform drop-shadow-[0_0_8px_#f87171] cursor-pointer"
+    >
+      &laquo;
+    </button>
+    <div
+      className={`bg-neutral-900 rounded-3xl p-6 w-80 border-4 border-red-500 shadow-2xl transform hover:scale-105 transition duration-300 ${glowClass}`}
+    >
+      <img
+        src={characters[index].img}
+        alt={characters[index].name}
+        className="w-36 mx-auto mb-3 aspect-square object-contain rounded-full border-4 border-red-400"
+      />
+      <h3 className="text-2xl font-bold text-red-300 mb-1">{characters[index].name}</h3>
+      <p className="text-sm text-gray-300 italic">{characters[index].description}</p>
+    </div>
+    <button
+      onClick={next}
+      className="text-4xl text-red-400 hover:text-red-500 hover:scale-125 transition-transform drop-shadow-[0_0_8px_#f87171] cursor-pointer"
+    >
+      &raquo;
+    </button>
+  </div>
+</section>
 			{/* Projects */}
 			<section className="text-center">
 				<h2 className="text-2xl font-bold text-red-400 mb-6">My Projects</h2>

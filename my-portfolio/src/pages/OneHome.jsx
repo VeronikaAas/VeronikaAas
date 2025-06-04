@@ -53,7 +53,7 @@ export default function Home1() {
          See Your Characters
         </h2>
         <div className="flex items-center justify-center gap-6">
-          <button onClick={prev} className="text-4xl hover:scale-125 transition-transform">⬅️</button>
+          <button onClick={prev} className="text-4xl hover:scale-125 transition-transform text-pink-500 cursor-pointer">&laquo;</button>
           <div
             className={`bg-white rounded-3xl p-6 w-80 border-4 border-pink-200 shadow-2xl transform hover:scale-105 transition duration-300 ${glowClass}`}
           >
@@ -65,7 +65,7 @@ export default function Home1() {
             <h3 className="text-2xl font-bold text-purple-500 mb-1">{characters[index].name}</h3>
             <p className="text-sm text-gray-600 italic">{characters[index].description}</p>
           </div>
-          <button onClick={next} className="text-4xl hover:scale-125 transition-transform">➡️</button>
+          <button onClick={next} className="text-4xl hover:scale-125 transition-transform text-pink-500 cursor-pointer">&raquo;</button>
         </div>
       </section>
 
