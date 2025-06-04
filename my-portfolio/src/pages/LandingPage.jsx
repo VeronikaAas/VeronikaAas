@@ -21,8 +21,6 @@ export default function LandingPage() {
 					Goth mode
 				</button>
 			</div>
-
-			<p className="text-sm blink">PRESS START</p>
 		</div>
 	);
 }
