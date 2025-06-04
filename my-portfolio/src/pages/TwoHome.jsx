@@ -48,7 +48,7 @@ export default function TwoHome() {
 	return (
 		<div className="bg-neutral-700 text-white min-h-screen p-6 font-mono space-y-16">
 			<section className="text-center mb-16">
-  <h2 className="text-4xl font-extrabold text-red-400 mb-6">See Your Characters</h2>
+  <h2 className="text-4xl font-extrabold text-red-400 mb-6">About me</h2>
   <div className="flex items-center justify-center gap-6">
     <button
       onClick={prev}
@@ -127,7 +127,7 @@ export default function TwoHome() {
 			<section className="text-center">
 				<h2 className="text-2xl font-bold text-red-400 mb-4">Core Skills</h2>
 				<div className="flex flex-wrap justify-center gap-4 text-sm">
-					{['Figma', 'Illustrator', 'Photoshop', 'HTML', 'CSS', 'JavaScript', 'Tailwind', 'React', 'Vite', 'GitHub', 'Netlify', 'SquareSpace'].map((skill) => (
+					{['Figma', 'Adobe Illustrator', 'Adobe Photoshop', 'HTML', 'CSS', 'JavaScript', 'Tailwind', 'React', 'Vite', 'GitHub', 'Netlify', 'SquareSpace'].map((skill) => (
 						<span key={skill} className="bg-red-900 text-red-300 px-3 py-1 rounded-full shadow">
 							{skill}
 						</span>

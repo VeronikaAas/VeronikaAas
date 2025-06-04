@@ -50,7 +50,7 @@ export default function Home1() {
       {/* Choose Your Character */}
       <section className="text-center mb-16">
         <h2 className="text-4xl font-extrabold bg-gradient-to-r from-violet-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-6 animate-wiggle">
-         See Your Characters
+         About me
         </h2>
         <div className="flex items-center justify-center gap-6">
           <button onClick={prev} className="text-4xl hover:scale-125 transition-transform text-pink-500 cursor-pointer">&laquo;</button>
@@ -120,7 +120,7 @@ export default function Home1() {
 			<section className="text-center mb-12">
 				<h2 className="text-2xl font-bold text-purple-400 mb-4">Skills</h2>
 				<div className="flex flex-wrap justify-center gap-4 text-sm">
-					{['Figma', 'Illustrator', 'Photoshop', 'HTML', 'CSS', 'JavaScript', 'Tailwind', 'React', 'Vite', 'GitHub', 'Netlify', 'SquareSpace'].map((skill) => (
+					{['Figma', 'Adobe Illustrator', 'Adobe Photoshop', 'HTML', 'CSS', 'JavaScript', 'Tailwind', 'React', 'Vite', 'GitHub', 'Netlify', 'SquareSpace'].map((skill) => (
 						<span key={skill} className="bg-pink-700 text-pink-100 px-3 py-1 rounded-full shadow">
 							{skill}
 						</span>
