@@ -2,10 +2,28 @@ import { useEffect, useState } from 'react';
 
 const gothTrailCount = 30;
 
+/**
+ * Returns a random light "goth" shade for cursor trail symbols.
+ *
+ * These shades are subtle grayscale colors to match a goth aesthetic.
+ * @returns {string} A hex color code
+ */
+
 function getRandomGothColor() {
 	const lightShades = ['#f5f5f5', '#eaeaea', '#dcdcdc', '#cccccc', '#bbbbbb'];
 	return lightShades[Math.floor(Math.random() * lightShades.length)];
 }
+
+/**
+ * GothCursor component adds a spooky cursor trail effect with animated skulls (☠).
+ *
+ * It tracks the mouse movement and renders floating skull symbols that fade out,
+ * creating a soft goth aesthetic using grayscale tones.
+ *
+ * @component
+ * @example
+ * return <GothCursor />
+ */
 
 export default function GothCursor() {
 	const [marks, setMarks] = useState([]);

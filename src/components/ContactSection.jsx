@@ -1,3 +1,14 @@
+/**
+ * ContactSection component displays contact information and links to external profiles.
+ *
+ * It includes an email link and external links to GitHub and LinkedIn.
+ * Designed with Tailwind CSS and styled to match a soft pastel aesthetic.
+ *
+ * @component
+ * @example
+ * return <ContactSection />
+ */
+
 export default function ContactSection() {
 	return (
 		<section className="text-center">

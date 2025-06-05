@@ -1,3 +1,8 @@
+/**
+ * List of core skills to display as badges.
+ * @type {string[]}
+ */
+
 const skills = [
 	'Figma',
 	'Adobe Illustrator',
@@ -12,6 +17,17 @@ const skills = [
 	'Netlify',
 	'SquareSpace',
 ];
+
+/**
+ * SkillsList component displays a collection of core skills as styled badges.
+ *
+ * The design uses a pastell palette and wraps the skills responsively.
+ * Ideal for showcasing tool familiarity and front-end technologies.
+ *
+ * @component
+ * @example
+ * return <SkillsDark />
+ */
 
 export default function SkillsList() {
 	return (

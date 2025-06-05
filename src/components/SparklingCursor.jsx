@@ -2,11 +2,32 @@ import { useEffect, useState } from 'react';
 
 const sparkleCount = 30;
 
+/**
+ * Generates a random pastel color in HSL format.
+ *
+ * The hue is chosen from a predefined set of soft, whimsical tones
+ * to create a dreamy sparkle trail effect.
+ *
+ * @returns {string} A pastel HSL color string
+ */
+
 function getRandomPastelColor() {
 	const hues = [280, 320, 200, 100, 40];
 	const hue = hues[Math.floor(Math.random() * hues.length)];
 	return `hsl(${hue}, 100%, 85%)`;
 }
+
+/**
+ * SparkleCursor component displays a trailing pastel "✨" effect that follows the cursor.
+ *
+ * Sparkles are rendered at the cursor's position with random pastel colors and sizes,
+ * fading out automatically for a whimsical UI effect. Styled with Tailwind CSS and
+ * positioned using fixed layout.
+ *
+ * @component
+ * @example
+ * return <SparkleCursor />
+ */
 
 export default function SparkleCursor() {
 	const [sparkles, setSparkles] = useState([]);

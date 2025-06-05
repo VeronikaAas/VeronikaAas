@@ -1,5 +1,10 @@
 import { Link } from 'react-router-dom';
 
+/**
+ * List of project data displayed in the ProjectsDark section.
+ * @type {Array<{ id: number, title: string, img: string, description: string, link: string }>}
+ */
+
 const projects = [
 	{
 		id: 1,
@@ -23,6 +28,17 @@ const projects = [
 		link: '/two/projects/DarkFireside',
 	},
 ];
+
+/**
+ * ProjectsDark component showcases a grid of academic projects.
+ *
+ * Each project includes an image, title, description, and a link to a detailed project page.
+ * The visual theme is styled for a darker/red-toned palette.
+ *
+ * @component
+ * @example
+ * return <ProjectsDark />
+ */
 
 export default function ProjectsDark() {
 	return (

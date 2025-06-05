@@ -1,5 +1,10 @@
 import { useState } from 'react';
 
+/**
+ * List of character options to display in the carousel.
+ * @type {Array<{ name: string, img: string, description: string }>}
+ */
+
 const characters = [
 	{
 		name: 'Book nerd',
@@ -32,6 +37,16 @@ const characters = [
 		description: 'A portal-hopping rogue who hacks realities one boss battle at a time.',
 	},
 ];
+
+/**
+ * CharacterCarousel component displays a whimsical character selector with navigation arrows.
+ *
+ * Users can cycle through a curated set of fantasy-style personas with images and descriptions.
+ *
+ * @component
+ * @example
+ * return <CharacterCarousel />
+ */
 
 export default function CharacterCarousel() {
 	const [index, setIndex] = useState(0);
