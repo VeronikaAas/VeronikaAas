@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 
 export default function Fireside() {
 	useEffect(() => {
-			document.title = 'Fireside Holidaze | VA';
-		}, []);
+		document.title = 'Fireside Holidaze | VA';
+	}, []);
 	return (
 		<div className="bg-gradient-to-br from-pink-100 via-purple-50 to-violet-100 min-h-screen p-8 font-sans text-pink-800 relative overflow-hidden">
 			<div className="max-w-3xl mx-auto text-center">
@@ -24,8 +24,8 @@ export default function Fireside() {
 				<p className="text-md mb-4 italic text-purple-700">🔧 Built with HTML, React and Tailwind</p>
 
 				<p className="mb-4 text-purple-700">
-					Welcome to Holidaze — where each getaway is handpicked to deliver the essence of slow living. 
-					Think crackling fireplaces, cozy interiors, and snow-dusted pines just outside your window.
+					Welcome to Holidaze — where each getaway is handpicked to deliver the essence of slow living. Think crackling
+					fireplaces, cozy interiors, and snow-dusted pines just outside your window.
 				</p>
 
 				<p className="mb-4 text-purple-700">
@@ -34,9 +34,9 @@ export default function Fireside() {
 				</p>
 
 				<p className="mb-4 text-purple-700">
-					This project is the frontend implementation of Holidaze, built on an existing backend API provided by Noroff.
-					The API handles user management, venue listings, and booking functionality, while this frontend brings it to life
-					with a cozy, responsive, and heartwarming design.
+					This project is the frontend implementation of Holidaze, built on an existing backend API provided by Noroff. The
+					API handles user management, venue listings, and booking functionality, while this frontend brings it to life with
+					a cozy, responsive, and heartwarming design.
 				</p>
 
 				<p className="mt-6 text-lg">

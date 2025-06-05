@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 
 export default function DarkFireside() {
 	useEffect(() => {
-			document.title = 'Fireside Holidaze | VA';
-		}, []);
+		document.title = 'Fireside Holidaze | VA';
+	}, []);
 	return (
 		<div className="bg-gradient-to-br from-neutral-900 via-neutral-800 to-black min-h-screen p-8 text-red-100 font-mono relative overflow-hidden">
 			<div className="max-w-3xl mx-auto text-center">
@@ -28,17 +28,19 @@ export default function DarkFireside() {
 				<p className="text-md mb-4 text-red-200 italic">🛠 Built with React, Tailwind & HTML</p>
 
 				<p className="mb-4 text-gray-300">
-					Welcome to Holidaze — each getaway is handpicked to deliver the essence of *slow living* — think crackling fireplaces, cozy interiors, and snow-dusted pines just outside your window.
+					Welcome to Holidaze — each getaway is handpicked to deliver the essence of *slow living* — think crackling
+					fireplaces, cozy interiors, and snow-dusted pines just outside your window.
 				</p>
 
 				<p className="mb-6 text-gray-400">
-					From serene forest hideaways to mountainside retreats, our collection invites you to pause, breathe, and rediscover the beauty of being still.
-					Comfort isn't just a feature — it's the entire experience.
+					From serene forest hideaways to mountainside retreats, our collection invites you to pause, breathe, and rediscover
+					the beauty of being still. Comfort isn't just a feature — it's the entire experience.
 				</p>
 
 				<p className="mb-6 text-gray-400">
-					This project is the frontend implementation of Holidaze, built on an existing backend API provided by Noroff.
-					It handles users, venues, and bookings — while this frontend wraps it all in a rich, responsive, and emotionally warm UI.
+					This project is the frontend implementation of Holidaze, built on an existing backend API provided by Noroff. It
+					handles users, venues, and bookings — while this frontend wraps it all in a rich, responsive, and emotionally warm
+					UI.
 				</p>
 
 				<p className="mt-6 text-lg">

@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 
 export default function DarkAuction() {
 	useEffect(() => {
-			document.title = 'Auction House | VA';
-		}, []);
+		document.title = 'Auction House | VA';
+	}, []);
 	return (
 		<div className="bg-gradient-to-br from-neutral-700 via-neutral-800 to-black min-h-screen p-8 text-red-100 font-mono relative overflow-hidden">
 			<div className="max-w-3xl mx-auto text-center">
@@ -12,8 +12,13 @@ export default function DarkAuction() {
 				</h1>
 
 				<p className="mb-2 text-lg text-gray-300">This is our submission for the semester assignment in December 2024.</p>
-				<p className="mb-2 text-gray-300">I, <strong className="text-red-300">Veronika Aas</strong>, collaborated with <strong className="text-red-300">Madelen Sletteberg</strong> on this project.</p>
-				<p className="mb-6 text-gray-300">We created a dark-themed Auction House for luxury handbags, watches, and accessories.</p>
+				<p className="mb-2 text-gray-300">
+					I, <strong className="text-red-300">Veronika Aas</strong>, collaborated with{' '}
+					<strong className="text-red-300">Madelen Sletteberg</strong> on this project.
+				</p>
+				<p className="mb-6 text-gray-300">
+					We created a dark-themed Auction House for luxury handbags, watches, and accessories.
+				</p>
 
 				<img
 					src="/projects/auction-house.png"
@@ -24,11 +29,13 @@ export default function DarkAuction() {
 				<p className="text-md mb-4 text-red-200 italic">⚙️ Built with HTML, JavaScript & Tailwind CSS</p>
 
 				<p className="mb-4 text-gray-300">
-					Auction House is an exclusive platform for buying and selling luxury items — with a gothic twist. It specializes in watches, handbags, and jewelry for those who prefer elegance... with shadows.
+					Auction House is an exclusive platform for buying and selling luxury items — with a gothic twist. It specializes in
+					watches, handbags, and jewelry for those who prefer elegance... with shadows.
 				</p>
 
 				<p className="mb-6 text-gray-400">
-					The project is a frontend implementation built on top of the Noroff-provided API, which handles users, listings, and bids — while this interface brings it to life with sharp edges, dark gradients, and red glows.
+					The project is a frontend implementation built on top of the Noroff-provided API, which handles users, listings,
+					and bids — while this interface brings it to life with sharp edges, dark gradients, and red glows.
 				</p>
 
 				<p className="mt-6 text-lg">

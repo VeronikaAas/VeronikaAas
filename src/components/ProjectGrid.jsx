@@ -30,7 +30,10 @@ export default function ProjectGrid() {
 			<h2 className="text-2xl font-bold text-violet-400 mb-6">My Projects</h2>
 			<div className="grid md:grid-cols-3 gap-6">
 				{projects.map((project) => (
-					<div key={project.id} className="bg-white rounded-lg p-4 shadow-md border border-pink-300 hover:shadow-lg transition">
+					<div
+						key={project.id}
+						className="bg-white rounded-lg p-4 shadow-md border border-pink-300 hover:shadow-lg transition"
+					>
 						<Link to={project.link}>
 							<img
 								src={project.img}

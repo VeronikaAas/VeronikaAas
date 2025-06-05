@@ -31,8 +31,8 @@ export default function Auction() {
 
 				<p className="mb-4 text-purple-700">
 					This project is the frontend implementation of Auction House, built on an existing backend API provided by Noroff.
-					The API handles user management, auction listings, and bidding functionality, while this frontend brings the
-					user interface to life with a luxurious, responsive, and sparkly design.
+					The API handles user management, auction listings, and bidding functionality, while this frontend brings the user
+					interface to life with a luxurious, responsive, and sparkly design.
 				</p>
 
 				<p className="mt-6 text-lg">

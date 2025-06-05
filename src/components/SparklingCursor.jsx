@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const sparkleCount = 30; 
+const sparkleCount = 30;
 
 function getRandomPastelColor() {
 	const hues = [280, 320, 200, 100, 40];
@@ -13,7 +13,7 @@ export default function SparkleCursor() {
 
 	useEffect(() => {
 		let lastTime = 0;
-		const spacing = 25; 
+		const spacing = 25;
 
 		const handleMove = (e) => {
 			const now = Date.now();
@@ -24,7 +24,7 @@ export default function SparkleCursor() {
 				id: Date.now() + Math.random(),
 				x: e.clientX,
 				y: e.clientY,
-				size: Math.random() * 20 + 24, 
+				size: Math.random() * 20 + 24,
 				color: getRandomPastelColor(),
 			};
 

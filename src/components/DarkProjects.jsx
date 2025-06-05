@@ -32,11 +32,7 @@ export default function ProjectsDark() {
 				{projects.map((project) => (
 					<div key={project.id} className="bg-white rounded-lg p-4 shadow-md border border-red-300">
 						<Link to={project.link}>
-							<img
-								src={project.img}
-								alt={project.title}
-								className="rounded mb-3 cursor-pointer hover:opacity-90 transition"
-							/>
+							<img src={project.img} alt={project.title} className="rounded mb-3 cursor-pointer hover:opacity-90 transition" />
 						</Link>
 						<h3 className="text-red-600 font-semibold mb-2">{project.title}</h3>
 						<p className="text-sm mb-2">{project.description}</p>
