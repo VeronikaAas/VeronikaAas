@@ -35,7 +35,7 @@ export default function DarkReact() {
 					and stylish UI.
 				</p>
 
-				<p className="mb-6 text-gray-600">
+				<p className="mb-6 text-gray-300">
 					After delievering the project, I received feedback from my teacher, who suggested that I forgot to format the code
 					properly. This is something I have worked on so my code now follows best practices and is more readable. 
 					I also added some JSDocs to my code.
