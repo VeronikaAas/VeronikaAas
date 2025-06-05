@@ -38,7 +38,7 @@ export default function DarkAuction() {
 					and bids — while this interface brings it to life with sharp edges, dark gradients, and red glows.
 				</p>
 
-				<p className="mb-6 text-gray-400">
+				<p className="mb-6 text-gray-600">
 					After delievering the project, I received feedback from my teacher, who suggested that we could break down the code into smaller components for better maintainability and readability. 
 					This is something we have worked on, and changed the bigegst components into smaller ones.
 				</p>

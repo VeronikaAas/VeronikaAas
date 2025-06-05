@@ -35,7 +35,7 @@ export default function Auction() {
 					interface to life with a luxurious, responsive  design.
 				</p>
 				
-				<p className="mb-6 text-gray-400">
+				<p className="mb-6 text-pink-700">
 					After delievering the project, I received feedback from my teacher, who suggested that we could break down the code into smaller components for better maintainability and readability. 
 					This is something we have worked on, and changed the bigegst components into smaller ones.
 				</p>

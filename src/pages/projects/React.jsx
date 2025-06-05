@@ -34,7 +34,7 @@ export default function ReactProject() {
 					interface brings it all to life with a responsive and user-friendly.
 				</p>
 
-				<p className="mb-6 text-gray-400">
+				<p className="mb-6 text-pink-700">
 					After delievering the project, I received feedback from my teacher, who suggested that I forgot to format the code
 					properly. This is something I have worked on so my code now follows best practices and is more readable. 
 					I also added some JSDocs to my code.
