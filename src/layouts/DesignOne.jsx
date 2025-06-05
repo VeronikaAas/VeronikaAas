@@ -1,6 +1,16 @@
 import { Outlet, Link } from 'react-router-dom';
 import SparkleCursor from '../components/SparklingCursor';
 
+/**
+ * DesignOne is a layout wrapper for the "Cute mode" theme.
+ *
+ * It includes the SparkleCursor effect, a themed header, and navigation.
+ * Nested routes are rendered via <Outlet />.
+ *
+ * @component
+ * @example
+ */
+
 export default function DesignOne() {
 	return (
 		<div className="bg-pink-50 min-h-screen text-purple-800 relative">

@@ -1,6 +1,16 @@
 import { Outlet, Link } from 'react-router-dom';
 import GothCursor from '../components/GothCursor';
 
+/**
+ * DesignTwo is a layout wrapper for the "Goth mode" theme.
+ *
+ * It includes the GothCursor trail effect, a themed header, and navigation.
+ * Nested routes are rendered via <Outlet />.
+ *
+ * @component
+ * @example
+ */
+
 export default function DesignTwo() {
 	return (
 		<div className="bg-neutral-900 min-h-screen text-red-900">
