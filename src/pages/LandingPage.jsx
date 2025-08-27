@@ -15,13 +15,13 @@ export default function LandingPage() {
 			<div className="flex flex-col sm:flex-row gap-6 mb-12">
 				<button
 					onClick={() => navigate('/one?theme=cute')}
-					className="px-6 py-4 bg-pink-400 text-white rounded-md shadow-[0_0_15px_#f472b6] hover:bg-pink-600 transition-all duration-300 cursor-pointer"
+					className="px-6 py-4 bg-pink-400 text-white rounded-md shadow-[0_0_15px_#f472b6] hover:bg-pink-600 transition-all duration-300 cursor-pointer border border-white"
 				>
 					Cute mode
 				</button>
 				<button
 					onClick={() => navigate('/two?theme=dark')}
-					className="px-6 py-4 bg-gray-800 text-white rounded-md shadow-[0_0_15px_#0f172a] hover:bg-black transition-all duration-300 cursor-pointer"
+					className="px-6 py-4 bg-gray-800 text-white rounded-md shadow-[0_0_15px_#0f172a] hover:bg-black transition-all duration-300 cursor-pointer border border-white"
 				>
 					Goth mode
 				</button>
