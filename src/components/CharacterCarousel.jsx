@@ -56,7 +56,7 @@ export default function CharacterCarousel() {
 
 	return (
 		<section className="text-center mb-16">
-			<h2 className="text-4xl font-extrabold bg-gradient-to-r from-violet-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-6 animate-wiggle">
+			<h2 className="text-4xl font-extrabold bg-gradient-to-r from-violet-400 via-purple-400 to-pink-400 bg-clip-text mb-6">
 				About Me
 			</h2>
 			<div className="flex items-center justify-center gap-6">
